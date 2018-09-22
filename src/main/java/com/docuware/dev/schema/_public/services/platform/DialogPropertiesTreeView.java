@@ -149,21 +149,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "StoreDialog".
     */
     public Dialog getDialogFromStoreDialogRelation() {
-        return MethodInvocation.<Dialog>get(this, links, "storeDialog", Dialog.class);
+        return MethodInvocation.get(this, links, "storeDialog", Dialog.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "StoreDialog" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Dialog>> getDialogFromStoreDialogRelationAsync() {
-        return MethodInvocation.<Dialog>getAsync(this, links, "storeDialog", Dialog.class);
+        return MethodInvocation.getAsync(this, links, "storeDialog", Dialog.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "StoreDialog" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Dialog>> getDialogFromStoreDialogRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Dialog>getAsync(this, links, "storeDialog", Dialog.class, ct);
+        return MethodInvocation.getAsync(this, links, "storeDialog", Dialog.class, ct);
     }
 
 

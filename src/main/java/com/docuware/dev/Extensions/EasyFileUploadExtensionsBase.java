@@ -10,8 +10,12 @@ import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 import java8.util.concurrent.CompletableFuture;
 import java8.util.function.Supplier;
+import org.apache.commons.logging.impl.Jdk13LumberjackLogger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.core.HttpHeaders;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.ExecutionException;
 
@@ -20,7 +24,9 @@ import java.util.concurrent.ExecutionException;
  * @author Patrick
  */
 public class EasyFileUploadExtensionsBase {
-       
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(EasyFileUploadExtensionsBase.class);
+
     /**
      * Uploads the specified file as new document to a basket asynchronously <p>
      * 
@@ -401,7 +407,9 @@ public class EasyFileUploadExtensionsBase {
     public static Section EasyUploadFile(Document document, IFileUploadInfo file) {
         try {
             return EasyUploadFileAsync(document, file).get().getContent();
-        } catch (InterruptedException | ExecutionException e) {
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e.getMessage());
+        } catch (ExecutionException e) {
             throw new RuntimeException(e.getMessage());
         }
     }
@@ -435,7 +443,9 @@ public class EasyFileUploadExtensionsBase {
     public static Section EasyReplaceFile(Section section, IFileUploadInfo file) {
         try {
             return EasyReplaceFileAsync(section, file).get().getContent();
-        } catch (InterruptedException | ExecutionException e) {
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e.getMessage());
+        } catch (ExecutionException e) {
             throw new RuntimeException(e.getMessage());
         }
     }
@@ -445,7 +455,8 @@ public class EasyFileUploadExtensionsBase {
         return CompletableFuture.<DeserializedHttpResponseGen<Section>>supplyAsync(new Supplier<DeserializedHttpResponseGen<Section>>() {
             @Override
             public DeserializedHttpResponseGen<Section> get() {
-                try (InputStream stream = file.createInputStream()) {
+                InputStream stream = file.createInputStream();
+                try {
                     WebResource web = httpClientProxy.getHttpClient().getClient().resource(GenerateFullUrl(link, httpClientProxy));
                     ClientResponse resp = web
                             .header(HttpHeaders.CONTENT_TYPE, file.getContentType())
@@ -456,9 +467,15 @@ public class EasyFileUploadExtensionsBase {
                         return new DeserializedHttpResponseGen(resp, e);
                     }
                     else {
-                        return new DeserializedHttpResponseGen<>(resp, resp.getEntity(Section.class));}
+                        return new DeserializedHttpResponseGen<Section>(resp, resp.getEntity(Section.class));}
                 } catch (Exception e) {
                     throw new RuntimeException(e.getMessage());
+                } finally {
+                    try {
+                        stream.close();
+                    } catch (IOException e) {
+                        LOGGER.warn("Unable to close de stream", e);
+                    }
                 }
             }
         });

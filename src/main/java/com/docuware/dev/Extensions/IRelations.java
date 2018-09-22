@@ -13,5 +13,5 @@ import com.docuware.dev.schema._public.services.Links;
  */
 public interface IRelations {
 
-    public Links getLinks();
+    Links getLinks();
 }

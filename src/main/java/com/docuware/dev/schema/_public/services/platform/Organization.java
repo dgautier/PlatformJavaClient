@@ -178,21 +178,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Filecabinets".
     */
     public FileCabinets getFileCabinetsFromFilecabinetsRelation() {
-        return MethodInvocation.<FileCabinets>get(this, links, "filecabinets", FileCabinets.class);
+        return MethodInvocation.get(this, links, "filecabinets", FileCabinets.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Filecabinets" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<FileCabinets>> getFileCabinetsFromFilecabinetsRelationAsync() {
-        return MethodInvocation.<FileCabinets>getAsync(this, links, "filecabinets", FileCabinets.class);
+        return MethodInvocation.getAsync(this, links, "filecabinets", FileCabinets.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Filecabinets" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<FileCabinets>> getFileCabinetsFromFilecabinetsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<FileCabinets>getAsync(this, links, "filecabinets", FileCabinets.class, ct);
+        return MethodInvocation.getAsync(this, links, "filecabinets", FileCabinets.class, ct);
     }
 
     /**
@@ -208,21 +208,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Users".
     */
     public Users getUsersFromUsersRelation() {
-        return MethodInvocation.<Users>get(this, links, "users", Users.class);
+        return MethodInvocation.get(this, links, "users", Users.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Users" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Users>> getUsersFromUsersRelationAsync() {
-        return MethodInvocation.<Users>getAsync(this, links, "users", Users.class);
+        return MethodInvocation.getAsync(this, links, "users", Users.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Users" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Users>> getUsersFromUsersRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Users>getAsync(this, links, "users", Users.class, ct);
+        return MethodInvocation.getAsync(this, links, "users", Users.class, ct);
     }
 
     /**
@@ -238,21 +238,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Roles".
     */
     public Roles getRolesFromRolesRelation() {
-        return MethodInvocation.<Roles>get(this, links, "roles", Roles.class);
+        return MethodInvocation.get(this, links, "roles", Roles.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Roles" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Roles>> getRolesFromRolesRelationAsync() {
-        return MethodInvocation.<Roles>getAsync(this, links, "roles", Roles.class);
+        return MethodInvocation.getAsync(this, links, "roles", Roles.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Roles" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Roles>> getRolesFromRolesRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Roles>getAsync(this, links, "roles", Roles.class, ct);
+        return MethodInvocation.getAsync(this, links, "roles", Roles.class, ct);
     }
 
     /**
@@ -268,21 +268,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Groups".
     */
     public Groups getGroupsFromGroupsRelation() {
-        return MethodInvocation.<Groups>get(this, links, "groups", Groups.class);
+        return MethodInvocation.get(this, links, "groups", Groups.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Groups" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Groups>> getGroupsFromGroupsRelationAsync() {
-        return MethodInvocation.<Groups>getAsync(this, links, "groups", Groups.class);
+        return MethodInvocation.getAsync(this, links, "groups", Groups.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Groups" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Groups>> getGroupsFromGroupsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Groups>getAsync(this, links, "groups", Groups.class, ct);
+        return MethodInvocation.getAsync(this, links, "groups", Groups.class, ct);
     }
 
     /**
@@ -298,21 +298,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "SelectListInfos".
     */
     public SelectListInfos getSelectListInfosFromSelectListInfosRelation() {
-        return MethodInvocation.<SelectListInfos>get(this, links, "selectListInfos", SelectListInfos.class);
+        return MethodInvocation.get(this, links, "selectListInfos", SelectListInfos.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SelectListInfos" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListInfos>> getSelectListInfosFromSelectListInfosRelationAsync() {
-        return MethodInvocation.<SelectListInfos>getAsync(this, links, "selectListInfos", SelectListInfos.class);
+        return MethodInvocation.getAsync(this, links, "selectListInfos", SelectListInfos.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SelectListInfos" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListInfos>> getSelectListInfosFromSelectListInfosRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<SelectListInfos>getAsync(this, links, "selectListInfos", SelectListInfos.class, ct);
+        return MethodInvocation.getAsync(this, links, "selectListInfos", SelectListInfos.class, ct);
     }
 
     /**
@@ -328,21 +328,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "WebSettings".
     */
     public WebSettings getWebSettingsFromWebSettingsRelation() {
-        return MethodInvocation.<WebSettings>get(this, links, "webSettings", WebSettings.class);
+        return MethodInvocation.get(this, links, "webSettings", WebSettings.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "WebSettings" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<WebSettings>> getWebSettingsFromWebSettingsRelationAsync() {
-        return MethodInvocation.<WebSettings>getAsync(this, links, "webSettings", WebSettings.class);
+        return MethodInvocation.getAsync(this, links, "webSettings", WebSettings.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "WebSettings" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<WebSettings>> getWebSettingsFromWebSettingsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<WebSettings>getAsync(this, links, "webSettings", WebSettings.class, ct);
+        return MethodInvocation.getAsync(this, links, "webSettings", WebSettings.class, ct);
     }
 
     /**
@@ -379,21 +379,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public Organization getOrganizationFromSelfRelation() {
-        return MethodInvocation.<Organization>get(this, links, "self", Organization.class);
+        return MethodInvocation.get(this, links, "self", Organization.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Organization>> getOrganizationFromSelfRelationAsync() {
-        return MethodInvocation.<Organization>getAsync(this, links, "self", Organization.class);
+        return MethodInvocation.getAsync(this, links, "self", Organization.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Organization>> getOrganizationFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Organization>getAsync(this, links, "self", Organization.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", Organization.class, ct);
     }
 
     /**
@@ -439,21 +439,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Dialogs".
     */
     public DialogInfos getDialogInfosFromDialogsRelation() {
-        return MethodInvocation.<DialogInfos>get(this, links, "dialogs", DialogInfos.class);
+        return MethodInvocation.get(this, links, "dialogs", DialogInfos.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Dialogs" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DialogInfos>> getDialogInfosFromDialogsRelationAsync() {
-        return MethodInvocation.<DialogInfos>getAsync(this, links, "dialogs", DialogInfos.class);
+        return MethodInvocation.getAsync(this, links, "dialogs", DialogInfos.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Dialogs" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DialogInfos>> getDialogInfosFromDialogsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DialogInfos>getAsync(this, links, "dialogs", DialogInfos.class, ct);
+        return MethodInvocation.getAsync(this, links, "dialogs", DialogInfos.class, ct);
     }
 
     /**
@@ -490,21 +490,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "UserInfo".
     */
     public UserInfo getUserInfoFromUserInfoRelation() {
-        return MethodInvocation.<UserInfo>get(this, links, "userInfo", UserInfo.class);
+        return MethodInvocation.get(this, links, "userInfo", UserInfo.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "UserInfo" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<UserInfo>> getUserInfoFromUserInfoRelationAsync() {
-        return MethodInvocation.<UserInfo>getAsync(this, links, "userInfo", UserInfo.class);
+        return MethodInvocation.getAsync(this, links, "userInfo", UserInfo.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "UserInfo" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<UserInfo>> getUserInfoFromUserInfoRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<UserInfo>getAsync(this, links, "userInfo", UserInfo.class, ct);
+        return MethodInvocation.getAsync(this, links, "userInfo", UserInfo.class, ct);
     }
 
     /**

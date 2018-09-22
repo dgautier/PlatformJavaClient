@@ -13,5 +13,5 @@ public interface IHttpClientProxy {
 
     HttpClientProxy getProxy();
 
-    public void setProxy(HttpClientProxy proxy);
+    void setProxy(HttpClientProxy proxy);
 }

@@ -102,21 +102,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public DialogInfos getDialogInfosFromSelfRelation() {
-        return MethodInvocation.<DialogInfos>get(this, links, "self", DialogInfos.class);
+        return MethodInvocation.get(this, links, "self", DialogInfos.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DialogInfos>> getDialogInfosFromSelfRelationAsync() {
-        return MethodInvocation.<DialogInfos>getAsync(this, links, "self", DialogInfos.class);
+        return MethodInvocation.getAsync(this, links, "self", DialogInfos.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DialogInfos>> getDialogInfosFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DialogInfos>getAsync(this, links, "self", DialogInfos.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", DialogInfos.class, ct);
     }
 
 

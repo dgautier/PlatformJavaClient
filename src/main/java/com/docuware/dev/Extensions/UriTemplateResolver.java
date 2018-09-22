@@ -15,7 +15,7 @@ public class UriTemplateResolver {
 
     private static final String _UriReservedSymbols = ":/?#[]@!$&'()*+,;=";
     private static final String _UriUnreservedSymbols = "-._~";
-    private static final HashMap<Character, OperatorInfo> _Operators = new HashMap<>();
+    private static final HashMap<Character, OperatorInfo> _Operators = new HashMap<Character, OperatorInfo>();
 
     private static void initiateOperators() {
         _Operators.put('\u0000', new OperatorInfo(true, "", ',', false, "", false));
@@ -29,7 +29,7 @@ public class UriTemplateResolver {
     }
 
     private final String _template;
-    private final HashMap<String, Object> _Parameters = new HashMap<>();
+    private final HashMap<String, Object> _Parameters = new HashMap<String, Object>();
 
     private enum States {
 
@@ -48,7 +48,7 @@ public class UriTemplateResolver {
     }
 
     public Iterable<String> GetParameterNames() {
-        List<String> parameterNames = new LinkedList<>();
+        List<String> parameterNames = new LinkedList<String>();
         _ParameterNames = parameterNames;
         Resolve();
         _ParameterNames = null;
@@ -275,7 +275,6 @@ public class UriTemplateResolver {
             {
                 result.append(c);
             } else {
-                ;
                 result.append("%").append(Integer.toHexString((int) c));
             }
         }

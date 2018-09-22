@@ -27,7 +27,7 @@ public class TarStream extends InputStream {
          * See https://en.wikipedia.org/wiki/Tar_(computing) for details on file format.
          */
 
-        List<ByteArrayInputStream> streamList = new ArrayList<>();
+        List<ByteArrayInputStream> streamList = new ArrayList<ByteArrayInputStream>();
         for (IFileUploadInfo file : files) {
             ByteArrayOutputStream headerStream = new ByteArrayOutputStream();
             ByteArrayOutputStream padStream = new ByteArrayOutputStream();
@@ -57,7 +57,7 @@ public class TarStream extends InputStream {
             streamList.add(entryInStream);
             streamList.add(padInStream);
         }
-        streams = new LinkedList<>(streamList);
+        streams = new LinkedList<ByteArrayInputStream>(streamList);
     }
 
     @Override
@@ -109,7 +109,7 @@ public class TarStream extends InputStream {
     }
 
     @Override
-    public int read() throws IOException {
+    public int read() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

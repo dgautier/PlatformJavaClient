@@ -127,42 +127,42 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public Document getDocumentFromSelfRelation() {
-        return MethodInvocation.<Document>get(this, links, "self", Document.class);
+        return MethodInvocation.get(this, links, "self", Document.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Document>> getDocumentFromSelfRelationAsync() {
-        return MethodInvocation.<Document>getAsync(this, links, "self", Document.class);
+        return MethodInvocation.getAsync(this, links, "self", Document.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Document>> getDocumentFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Document>getAsync(this, links, "self", Document.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", Document.class, ct);
     }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Self".
     */
     public Document postToSelfRelationForDocument(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Document, InputStream>post(this, links, "self", Document.class, data, bodyContentType, "application/vnd.docuware.platform.document+xml");
+        return MethodInvocation.post(this, links, "self", Document.class, data, bodyContentType, "application/vnd.docuware.platform.document+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Document>> postToSelfRelationForDocumentAsync(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Document, InputStream>postAsync(this, links, "self", Document.class, data, bodyContentType, "application/vnd.docuware.platform.document+xml");
+        return MethodInvocation.postAsync(this, links, "self", Document.class, data, bodyContentType, "application/vnd.docuware.platform.document+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Document>> postToSelfRelationForDocumentAsync(CancellationToken ct, String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Document, InputStream>postAsync(this, links, "self", Document.class, data, bodyContentType, "application/vnd.docuware.platform.document+xml", ct);
+        return MethodInvocation.postAsync(this, links, "self", Document.class, data, bodyContentType, "application/vnd.docuware.platform.document+xml", ct);
 }
 
     /**
@@ -199,21 +199,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Fields".
     */
     public DocumentIndexFields getDocumentIndexFieldsFromFieldsRelation() {
-        return MethodInvocation.<DocumentIndexFields>get(this, links, "fields", DocumentIndexFields.class);
+        return MethodInvocation.get(this, links, "fields", DocumentIndexFields.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Fields" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentIndexFields>> getDocumentIndexFieldsFromFieldsRelationAsync() {
-        return MethodInvocation.<DocumentIndexFields>getAsync(this, links, "fields", DocumentIndexFields.class);
+        return MethodInvocation.getAsync(this, links, "fields", DocumentIndexFields.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Fields" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentIndexFields>> getDocumentIndexFieldsFromFieldsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentIndexFields>getAsync(this, links, "fields", DocumentIndexFields.class, ct);
+        return MethodInvocation.getAsync(this, links, "fields", DocumentIndexFields.class, ct);
     }
 
     /**
@@ -271,21 +271,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Suggestions".
     */
     public SuggestionFields getSuggestionFieldsFromSuggestionsRelation() {
-        return MethodInvocation.<SuggestionFields>get(this, links, "suggestions", SuggestionFields.class);
+        return MethodInvocation.get(this, links, "suggestions", SuggestionFields.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Suggestions" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SuggestionFields>> getSuggestionFieldsFromSuggestionsRelationAsync() {
-        return MethodInvocation.<SuggestionFields>getAsync(this, links, "suggestions", SuggestionFields.class);
+        return MethodInvocation.getAsync(this, links, "suggestions", SuggestionFields.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Suggestions" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SuggestionFields>> getSuggestionFieldsFromSuggestionsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<SuggestionFields>getAsync(this, links, "suggestions", SuggestionFields.class, ct);
+        return MethodInvocation.getAsync(this, links, "suggestions", SuggestionFields.class, ct);
     }
 
     /**
@@ -331,42 +331,42 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Sections".
     */
     public Sections getSectionsFromSectionsRelation() {
-        return MethodInvocation.<Sections>get(this, links, "sections", Sections.class);
+        return MethodInvocation.get(this, links, "sections", Sections.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Sections" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Sections>> getSectionsFromSectionsRelationAsync() {
-        return MethodInvocation.<Sections>getAsync(this, links, "sections", Sections.class);
+        return MethodInvocation.getAsync(this, links, "sections", Sections.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Sections" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Sections>> getSectionsFromSectionsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Sections>getAsync(this, links, "sections", Sections.class, ct);
+        return MethodInvocation.getAsync(this, links, "sections", Sections.class, ct);
     }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Sections".
     */
     public Section postToSectionsRelationForSection(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>post(this, links, "sections", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.post(this, links, "sections", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Sections" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> postToSectionsRelationForSectionAsync(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>postAsync(this, links, "sections", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.postAsync(this, links, "sections", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Sections" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> postToSectionsRelationForSectionAsync(CancellationToken ct, String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>postAsync(this, links, "sections", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
+        return MethodInvocation.postAsync(this, links, "sections", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
 }
 
     /**
@@ -382,21 +382,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Thumbnail".
     */
     public InputStream getInputStreamFromThumbnailRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "thumbnail", InputStream.class);
+        return MethodInvocation.get(this, links, "thumbnail", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Thumbnail" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromThumbnailRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "thumbnail", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "thumbnail", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Thumbnail" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromThumbnailRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "thumbnail", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "thumbnail", InputStream.class, ct);
     }
 
     /**
@@ -463,21 +463,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP post Method on the link for the relation "Rights".
     */
     public Section postToRightsRelationForSection(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>post(this, links, "rights", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.post(this, links, "rights", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Rights" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> postToRightsRelationForSectionAsync(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>postAsync(this, links, "rights", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.postAsync(this, links, "rights", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Rights" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> postToRightsRelationForSectionAsync(CancellationToken ct, String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>postAsync(this, links, "rights", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
+        return MethodInvocation.postAsync(this, links, "rights", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
 }
 
     /**

@@ -36,7 +36,11 @@ public class DocumentLock implements Closeable {
 
     Consumer<Throwable> onError;
     /*
-    Consumer<Throwable> onError = (Throwable ex) -> {
+    Consumer<Throwable> onError = new Consumer<Throwable>() {
+        @Override
+        public void accept(Throwable throwable) {
+
+        }
     };
     */
     ReentrantReadWriteLock isClosingLock = new ReentrantReadWriteLock();
@@ -180,12 +184,15 @@ public class DocumentLock implements Closeable {
             }
         });
         /*
-        return documentLockRequestHandler.sendLock(li).thenApply(t -> {
-            String content = t;
-            if (content != null) {
-                return new DocumentLock(li, onError, documentLockRequestHandler);
-            } else {
-                throw new RuntimeException("Do not expect empty content when acquiring a lock.");
+        return documentLockRequestHandler.sendLock(li).thenApply(new Function<String, DocumentLock>() {
+            @Override
+            public DocumentLock apply(String t) {
+                String content = t;
+                if (content != null) {
+                    return new DocumentLock(li, onError, documentLockRequestHandler);
+                } else {
+                    throw new RuntimeException("Do not expect empty content when acquiring a lock.");
+                }
             }
         });
         */
@@ -212,16 +219,22 @@ public class DocumentLock implements Closeable {
             }
         });
         /*
-        this.currentLockTask.whenComplete(
-                (s, x) -> {
-                    this.currentLockTask = null;
-                    if (x == null) {
-                        this.exception = null;
-                    } else {
-                        setError(x);
-                    }
-                })
-                .thenRun(() -> createTimer());
+        this.currentLockTask.whenComplete(new BiConsumer<String, Throwable>() {
+            @Override
+            public void accept(String s, Throwable x) {
+                DocumentLock.this.currentLockTask = null;
+                if (x == null) {
+                    DocumentLock.this.exception = null;
+                } else {
+                    setError(x);
+                }
+            }
+        }).thenRun(new Runnable() {
+            @Override
+            public void run() {
+                createTimer();
+            }
+        });
                 */
     }
 
@@ -311,25 +324,30 @@ public class DocumentLock implements Closeable {
         });
         /*
         CompletableFuture<String> myClosingTask = this.currentLockTask != null
-                ? CompletableFuture.<String>supplyAsync(() -> {
-                    try {
-                        currentLockTask.get();
-                        return documentLockRequestHandler.deleteLock().get();
-                    } catch (Exception x) {
-                        throw new RuntimeException(x.getMessage());
-                    }
-                })
+                ? CompletableFuture.supplyAsync(new Supplier<String>() {
+            @Override
+            public String get() {
+                try {
+                    currentLockTask.get();
+                    return documentLockRequestHandler.deleteLock().get();
+                } catch (Exception x) {
+                    throw new RuntimeException(x.getMessage());
+                }
+            }
+        })
                 : this.documentLockRequestHandler.deleteLock();
 
-        this.closingTask = myClosingTask.handle(
-                (r, x) -> {
-                    if (x != null) {
-                        this.exception = x;
-                    } else {
-                        this.isClosed = true;
-                    }
-                    return r;
-                });
+        this.closingTask = myClosingTask.handle(new BiFunction<String, Throwable, String>() {
+            @Override
+            public String apply(String r, Throwable x) {
+                if (x != null) {
+                    DocumentLock.this.exception = x;
+                } else {
+                    DocumentLock.this.isClosed = true;
+                }
+                return r;
+            }
+        });
                 */
 
     }

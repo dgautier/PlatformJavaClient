@@ -370,21 +370,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "AsBitmap".
     */
     public InputStream getInputStreamFromAsBitmapRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "asBitmap", InputStream.class);
+        return MethodInvocation.get(this, links, "asBitmap", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AsBitmap" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromAsBitmapRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "asBitmap", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "asBitmap", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AsBitmap" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromAsBitmapRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "asBitmap", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "asBitmap", InputStream.class, ct);
     }
 
     /**
@@ -421,21 +421,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "AsSvg".
     */
     public InputStream getInputStreamFromAsSvgRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "asSvg", InputStream.class);
+        return MethodInvocation.get(this, links, "asSvg", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AsSvg" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromAsSvgRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "asSvg", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "asSvg", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AsSvg" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromAsSvgRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "asSvg", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "asSvg", InputStream.class, ct);
     }
 
     /**

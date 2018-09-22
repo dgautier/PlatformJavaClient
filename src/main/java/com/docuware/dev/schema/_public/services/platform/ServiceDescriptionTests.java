@@ -132,21 +132,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "HtmlTestClient".
     */
     public InputStream getInputStreamFromHtmlTestClientRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "htmlTestClient", InputStream.class);
+        return MethodInvocation.get(this, links, "htmlTestClient", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "HtmlTestClient" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromHtmlTestClientRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "htmlTestClient", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "htmlTestClient", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "HtmlTestClient" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromHtmlTestClientRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "htmlTestClient", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "htmlTestClient", InputStream.class, ct);
     }
 
     /**
@@ -222,21 +222,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "QueryString".
     */
     public InputStream getInputStreamFromQueryStringRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "queryString", InputStream.class);
+        return MethodInvocation.get(this, links, "queryString", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "QueryString" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromQueryStringRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "queryString", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "queryString", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "QueryString" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromQueryStringRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "queryString", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "queryString", InputStream.class, ct);
     }
 
 

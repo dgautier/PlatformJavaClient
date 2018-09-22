@@ -93,7 +93,7 @@ public class FileNameExtensions {
      * @return   a list containing the fileName, the fileCabinetId and the docId in this order
      */
     public static List<Object> TryDecodeCheckoutFileName(String encodedName) {
-        List<Object> result = new LinkedList<>();
+        List<Object> result = new LinkedList<Object>();
         String ext = getExtension(encodedName);
         String encodedFileName = getFileNameWithoutExtension(encodedName) == null ? "" : getFileNameWithoutExtension(encodedName);
         String[] splits = encodedFileName.split("\\+", 3);

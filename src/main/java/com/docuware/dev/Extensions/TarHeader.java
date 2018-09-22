@@ -5,10 +5,12 @@
  */
 package com.docuware.dev.Extensions;
 
+import org.apache.commons.codec.CharEncoding;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.GregorianCalendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -117,15 +119,15 @@ public class TarHeader {
     private static long HostToNetworkOrder(long host) {
         return (int) ((long) HostToNetworkOrder((int) host)
                 & (-1L) << 32
-                | ((long) HostToNetworkOrder((int) ((int) (host >> 32))) & Long.MAX_VALUE));
+                | ((long) HostToNetworkOrder(((int) (host >> 32))) & Long.MAX_VALUE));
     }
 
     private static int HostToNetworkOrder(int host) {
-        return (int) ((int) (HostToNetworkOrder((short) host) & -1) << 16 | (HostToNetworkOrder((short) (host >> 16)) & -1));
+        return ((HostToNetworkOrder((short) host) & -1) << 16 | (HostToNetworkOrder((short) (host >> 16)) & -1));
     }
 
     private static short HostToNetworkOrder(short host) {
-        return (short) ((int) (host & 255) << 8 | ((int) host >> 8 & 255));
+        return (short) ((host & 255) << 8 | ((int) host >> 8 & 255));
     }
 
     private static long NetworkToHostOrder(long network) {
@@ -142,7 +144,7 @@ public class TarHeader {
 
     static int RecalculateChecksum(byte[] buf) {
         // Set default value for checksum. That is 8 spaces.
-        byte[] bytes = "        ".getBytes(StandardCharsets.UTF_8);
+        byte[] bytes = "        ".getBytes(Charset.forName(CharEncoding.UTF_8));
         System.arraycopy(bytes, 0, buf, 148, bytes.length);
 
         // Calculate checksum

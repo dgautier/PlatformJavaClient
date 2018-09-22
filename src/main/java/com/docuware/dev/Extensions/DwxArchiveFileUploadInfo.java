@@ -5,12 +5,14 @@
  */
 package com.docuware.dev.Extensions;
 
+import org.threeten.bp.ZoneId;
+import org.threeten.bp.ZonedDateTime;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
@@ -55,7 +57,10 @@ public class DwxArchiveFileUploadInfo implements IFileUploadInfo {
 
     @Override
     public GregorianCalendar getLastWriteTimeUtc() {
-        return GregorianCalendar.from(ZonedDateTime.now(ZoneId.of("UTC")));
+        ZonedDateTime zdt = ZonedDateTime.now(ZoneId.of("UTC"));
+        GregorianCalendar gc  = new GregorianCalendar();
+        gc.setTime(new Date(zdt.toEpochSecond()));
+        return gc;
     }
 
 }

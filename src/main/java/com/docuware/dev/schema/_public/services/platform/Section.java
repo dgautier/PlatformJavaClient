@@ -329,21 +329,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Document".
     */
     public Document getDocumentFromDocumentRelation() {
-        return MethodInvocation.<Document>get(this, links, "document", Document.class);
+        return MethodInvocation.get(this, links, "document", Document.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Document" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Document>> getDocumentFromDocumentRelationAsync() {
-        return MethodInvocation.<Document>getAsync(this, links, "document", Document.class);
+        return MethodInvocation.getAsync(this, links, "document", Document.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Document" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Document>> getDocumentFromDocumentRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Document>getAsync(this, links, "document", Document.class, ct);
+        return MethodInvocation.getAsync(this, links, "document", Document.class, ct);
     }
 
     /**
@@ -359,21 +359,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImage".
     */
     public InputStream getInputStreamFromDeepZoomImageRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "deepZoomImage", InputStream.class);
+        return MethodInvocation.get(this, links, "deepZoomImage", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImage" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImage", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "deepZoomImage", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImage" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImage", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "deepZoomImage", InputStream.class, ct);
     }
 
     /**
@@ -389,21 +389,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImageWithAnnotation".
     */
     public InputStream getInputStreamFromDeepZoomImageWithAnnotationRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "deepZoomImageWithAnnotation", InputStream.class);
+        return MethodInvocation.get(this, links, "deepZoomImageWithAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImageWithAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageWithAnnotationRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImageWithAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageWithAnnotationRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class, ct);
     }
 
     /**
@@ -419,21 +419,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Positions".
     */
     public WordSearchResult getWordSearchResultFromPositionsRelation() {
-        return MethodInvocation.<WordSearchResult>get(this, links, "positions", WordSearchResult.class);
+        return MethodInvocation.get(this, links, "positions", WordSearchResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Positions" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<WordSearchResult>> getWordSearchResultFromPositionsRelationAsync() {
-        return MethodInvocation.<WordSearchResult>getAsync(this, links, "positions", WordSearchResult.class);
+        return MethodInvocation.getAsync(this, links, "positions", WordSearchResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Positions" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<WordSearchResult>> getWordSearchResultFromPositionsRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<WordSearchResult>getAsync(this, links, "positions", WordSearchResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "positions", WordSearchResult.class, ct);
     }
 
     /**
@@ -470,21 +470,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Textshot".
     */
     public DocumentContent getDocumentContentFromTextshotRelation() {
-        return MethodInvocation.<DocumentContent>get(this, links, "textshot", DocumentContent.class);
+        return MethodInvocation.get(this, links, "textshot", DocumentContent.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Textshot" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentContent>> getDocumentContentFromTextshotRelationAsync() {
-        return MethodInvocation.<DocumentContent>getAsync(this, links, "textshot", DocumentContent.class);
+        return MethodInvocation.getAsync(this, links, "textshot", DocumentContent.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Textshot" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentContent>> getDocumentContentFromTextshotRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentContent>getAsync(this, links, "textshot", DocumentContent.class, ct);
+        return MethodInvocation.getAsync(this, links, "textshot", DocumentContent.class, ct);
     }
 
     /**
@@ -521,63 +521,63 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Content".
     */
     public InputStream getInputStreamFromContentRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "content", InputStream.class);
+        return MethodInvocation.get(this, links, "content", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromContentRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "content", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "content", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromContentRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "content", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "content", InputStream.class, ct);
     }
 
     /**
     * Calls the HTTP put Method on the link for the relation "Content".
     */
     public Section putToContentRelationForSection(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>put(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.put(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP put Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> putToContentRelationForSectionAsync(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>putAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.putAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP put Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> putToContentRelationForSectionAsync(CancellationToken ct, String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>putAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
+        return MethodInvocation.putAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Content".
     */
     public Section postToContentRelationForSection(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>post(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.post(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> postToContentRelationForSectionAsync(String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>postAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
+        return MethodInvocation.postAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> postToContentRelationForSectionAsync(CancellationToken ct, String bodyContentType, InputStream data) { 
-        return MethodInvocation.<Section, InputStream>postAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
+        return MethodInvocation.postAsync(this, links, "content", Section.class, data, bodyContentType, "application/vnd.docuware.platform.section+xml", ct);
 }
 
     /**
@@ -593,21 +593,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "FileDownload".
     */
     public InputStream getInputStreamFromFileDownloadRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "fileDownload", InputStream.class);
+        return MethodInvocation.get(this, links, "fileDownload", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "FileDownload" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromFileDownloadRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "fileDownload", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "fileDownload", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "FileDownload" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromFileDownloadRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "fileDownload", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "fileDownload", InputStream.class, ct);
     }
 
     /**
@@ -644,21 +644,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public Section getSectionFromSelfRelation() {
-        return MethodInvocation.<Section>get(this, links, "self", Section.class);
+        return MethodInvocation.get(this, links, "self", Section.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> getSectionFromSelfRelationAsync() {
-        return MethodInvocation.<Section>getAsync(this, links, "self", Section.class);
+        return MethodInvocation.getAsync(this, links, "self", Section.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Section>> getSectionFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Section>getAsync(this, links, "self", Section.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", Section.class, ct);
     }
 
     /**
@@ -674,21 +674,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Thumbnail".
     */
     public InputStream getInputStreamFromThumbnailRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "thumbnail", InputStream.class);
+        return MethodInvocation.get(this, links, "thumbnail", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Thumbnail" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromThumbnailRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "thumbnail", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "thumbnail", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Thumbnail" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromThumbnailRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "thumbnail", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "thumbnail", InputStream.class, ct);
     }
 
     /**
@@ -704,21 +704,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Icon".
     */
     public InputStream getInputStreamFromIconRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "icon", InputStream.class);
+        return MethodInvocation.get(this, links, "icon", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Icon" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromIconRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "icon", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "icon", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Icon" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromIconRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "icon", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "icon", InputStream.class, ct);
     }
 
     /**
@@ -734,42 +734,42 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "TextAnnotation".
     */
     public InputStream getInputStreamFromTextAnnotationRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "textAnnotation", InputStream.class);
+        return MethodInvocation.get(this, links, "textAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "TextAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromTextAnnotationRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "textAnnotation", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "textAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "TextAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromTextAnnotationRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "textAnnotation", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "textAnnotation", InputStream.class, ct);
     }
 
     /**
     * Calls the HTTP post Method on the link for the relation "TextAnnotation".
     */
     public InputStream postToTextAnnotationRelationForInputStream(InputStream data) { 
-        return MethodInvocation.<InputStream, InputStream>post(this, links, "textAnnotation", InputStream.class, data, "text/string", "application/xml");
+        return MethodInvocation.post(this, links, "textAnnotation", InputStream.class, data, "text/string", "application/xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "TextAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> postToTextAnnotationRelationForInputStreamAsync(InputStream data) { 
-        return MethodInvocation.<InputStream, InputStream>postAsync(this, links, "textAnnotation", InputStream.class, data, "text/string", "application/xml");
+        return MethodInvocation.postAsync(this, links, "textAnnotation", InputStream.class, data, "text/string", "application/xml");
 }
 
     /**
     * Calls the HTTP post Method on the link for the relation "TextAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> postToTextAnnotationRelationForInputStreamAsync(CancellationToken ct, InputStream data) { 
-        return MethodInvocation.<InputStream, InputStream>postAsync(this, links, "textAnnotation", InputStream.class, data, "text/string", "application/xml", ct);
+        return MethodInvocation.postAsync(this, links, "textAnnotation", InputStream.class, data, "text/string", "application/xml", ct);
 }
 
     /**
@@ -815,14 +815,14 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsSvg".
     */
     public InputStream getInputStreamFromAnnotationAsSvgRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "annotationAsSvg", InputStream.class);
+        return MethodInvocation.get(this, links, "annotationAsSvg", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsSvg" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromAnnotationAsSvgRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "annotationAsSvg", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "annotationAsSvg", InputStream.class);
     }
 
     /**

@@ -170,21 +170,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Next".
     */
     public UploadedFileChunk getUploadedFileChunkFromNextRelation() {
-        return MethodInvocation.<UploadedFileChunk>get(this, links, "next", UploadedFileChunk.class);
+        return MethodInvocation.get(this, links, "next", UploadedFileChunk.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Next" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<UploadedFileChunk>> getUploadedFileChunkFromNextRelationAsync() {
-        return MethodInvocation.<UploadedFileChunk>getAsync(this, links, "next", UploadedFileChunk.class);
+        return MethodInvocation.getAsync(this, links, "next", UploadedFileChunk.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Next" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<UploadedFileChunk>> getUploadedFileChunkFromNextRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<UploadedFileChunk>getAsync(this, links, "next", UploadedFileChunk.class, ct);
+        return MethodInvocation.getAsync(this, links, "next", UploadedFileChunk.class, ct);
     }
 
 

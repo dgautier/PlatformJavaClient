@@ -163,21 +163,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "SubstitutionRules".
     */
     public SubstitutionRules getSubstitutionRulesFromSubstitutionRulesRelation() {
-        return MethodInvocation.<SubstitutionRules>get(this, links, "substitutionRules", SubstitutionRules.class);
+        return MethodInvocation.get(this, links, "substitutionRules", SubstitutionRules.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SubstitutionRules" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SubstitutionRules>> getSubstitutionRulesFromSubstitutionRulesRelationAsync() {
-        return MethodInvocation.<SubstitutionRules>getAsync(this, links, "substitutionRules", SubstitutionRules.class);
+        return MethodInvocation.getAsync(this, links, "substitutionRules", SubstitutionRules.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SubstitutionRules" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SubstitutionRules>> getSubstitutionRulesFromSubstitutionRulesRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<SubstitutionRules>getAsync(this, links, "substitutionRules", SubstitutionRules.class, ct);
+        return MethodInvocation.getAsync(this, links, "substitutionRules", SubstitutionRules.class, ct);
     }
 
 

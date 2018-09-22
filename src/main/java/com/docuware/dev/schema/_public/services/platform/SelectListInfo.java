@@ -164,21 +164,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Values".
     */
     public SelectListValues getSelectListValuesFromValuesRelation() {
-        return MethodInvocation.<SelectListValues>get(this, links, "values", SelectListValues.class);
+        return MethodInvocation.get(this, links, "values", SelectListValues.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Values" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListValues>> getSelectListValuesFromValuesRelationAsync() {
-        return MethodInvocation.<SelectListValues>getAsync(this, links, "values", SelectListValues.class);
+        return MethodInvocation.getAsync(this, links, "values", SelectListValues.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Values" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListValues>> getSelectListValuesFromValuesRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<SelectListValues>getAsync(this, links, "values", SelectListValues.class, ct);
+        return MethodInvocation.getAsync(this, links, "values", SelectListValues.class, ct);
     }
 
     /**

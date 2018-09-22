@@ -152,21 +152,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "NextBlock".
     */
     public Pages getPagesFromNextBlockRelation() {
-        return MethodInvocation.<Pages>get(this, links, "nextBlock", Pages.class);
+        return MethodInvocation.get(this, links, "nextBlock", Pages.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "NextBlock" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Pages>> getPagesFromNextBlockRelationAsync() {
-        return MethodInvocation.<Pages>getAsync(this, links, "nextBlock", Pages.class);
+        return MethodInvocation.getAsync(this, links, "nextBlock", Pages.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "NextBlock" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Pages>> getPagesFromNextBlockRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Pages>getAsync(this, links, "nextBlock", Pages.class, ct);
+        return MethodInvocation.getAsync(this, links, "nextBlock", Pages.class, ct);
     }
 
 

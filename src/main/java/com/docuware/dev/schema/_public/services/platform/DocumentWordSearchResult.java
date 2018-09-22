@@ -190,21 +190,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Next".
     */
     public DocumentWordSearchResult getDocumentWordSearchResultFromNextRelation() {
-        return MethodInvocation.<DocumentWordSearchResult>get(this, links, "next", DocumentWordSearchResult.class);
+        return MethodInvocation.get(this, links, "next", DocumentWordSearchResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Next" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentWordSearchResult>> getDocumentWordSearchResultFromNextRelationAsync() {
-        return MethodInvocation.<DocumentWordSearchResult>getAsync(this, links, "next", DocumentWordSearchResult.class);
+        return MethodInvocation.getAsync(this, links, "next", DocumentWordSearchResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Next" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentWordSearchResult>> getDocumentWordSearchResultFromNextRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentWordSearchResult>getAsync(this, links, "next", DocumentWordSearchResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "next", DocumentWordSearchResult.class, ct);
     }
 
 

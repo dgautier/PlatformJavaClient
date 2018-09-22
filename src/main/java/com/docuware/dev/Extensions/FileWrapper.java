@@ -5,13 +5,15 @@
  */
 package com.docuware.dev.Extensions;
 
+import org.threeten.bp.Instant;
+import org.threeten.bp.ZoneId;
+import org.threeten.bp.ZonedDateTime;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.time.Instant;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
@@ -81,7 +83,8 @@ public class FileWrapper implements IFileUploadInfo {
     public GregorianCalendar getLastWriteTimeUtc() {
         Long t = file.lastModified();
         ZonedDateTime zdt = ZonedDateTime.ofInstant(Instant.ofEpochMilli(t), ZoneId.of("UTC"));
-        GregorianCalendar gc  =GregorianCalendar.from(zdt);
+        GregorianCalendar gc  = new GregorianCalendar();
+        gc.setTime(new Date(zdt.toEpochSecond()));
         return gc;
     }
 }

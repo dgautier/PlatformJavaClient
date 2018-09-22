@@ -180,21 +180,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public AdhocRenderingFile getAdhocRenderingFileFromSelfRelation() {
-        return MethodInvocation.<AdhocRenderingFile>get(this, links, "self", AdhocRenderingFile.class);
+        return MethodInvocation.get(this, links, "self", AdhocRenderingFile.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<AdhocRenderingFile>> getAdhocRenderingFileFromSelfRelationAsync() {
-        return MethodInvocation.<AdhocRenderingFile>getAsync(this, links, "self", AdhocRenderingFile.class);
+        return MethodInvocation.getAsync(this, links, "self", AdhocRenderingFile.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<AdhocRenderingFile>> getAdhocRenderingFileFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<AdhocRenderingFile>getAsync(this, links, "self", AdhocRenderingFile.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", AdhocRenderingFile.class, ct);
     }
 
     /**

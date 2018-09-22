@@ -238,21 +238,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "SelectListValues".
     */
     public SelectListResult getSelectListResultFromSelectListValuesRelation() {
-        return MethodInvocation.<SelectListResult>get(this, links, "selectListValues", SelectListResult.class);
+        return MethodInvocation.get(this, links, "selectListValues", SelectListResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SelectListValues" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListResult>> getSelectListResultFromSelectListValuesRelationAsync() {
-        return MethodInvocation.<SelectListResult>getAsync(this, links, "selectListValues", SelectListResult.class);
+        return MethodInvocation.getAsync(this, links, "selectListValues", SelectListResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SelectListValues" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListResult>> getSelectListResultFromSelectListValuesRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<SelectListResult>getAsync(this, links, "selectListValues", SelectListResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "selectListValues", SelectListResult.class, ct);
     }
 
     /**
@@ -289,21 +289,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "SimpleSelectList".
     */
     public SelectListResult getSelectListResultFromSimpleSelectListRelation() {
-        return MethodInvocation.<SelectListResult>get(this, links, "simpleSelectList", SelectListResult.class);
+        return MethodInvocation.get(this, links, "simpleSelectList", SelectListResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SimpleSelectList" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListResult>> getSelectListResultFromSimpleSelectListRelationAsync() {
-        return MethodInvocation.<SelectListResult>getAsync(this, links, "simpleSelectList", SelectListResult.class);
+        return MethodInvocation.getAsync(this, links, "simpleSelectList", SelectListResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SimpleSelectList" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<SelectListResult>> getSelectListResultFromSimpleSelectListRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<SelectListResult>getAsync(this, links, "simpleSelectList", SelectListResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "simpleSelectList", SelectListResult.class, ct);
     }
 
     /**

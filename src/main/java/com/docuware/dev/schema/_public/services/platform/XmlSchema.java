@@ -147,21 +147,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Schema".
     */
     public InputStream getInputStreamFromSchemaRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "schema", InputStream.class);
+        return MethodInvocation.get(this, links, "schema", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Schema" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromSchemaRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "schema", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "schema", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Schema" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromSchemaRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "schema", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "schema", InputStream.class, ct);
     }
 
 

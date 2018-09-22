@@ -51,13 +51,15 @@ public class UriTemplateExtensions {
      * @throws  RuntimeException
      */
     public static String CreateUrl(Iterable<UriTemplateDescription> templates, String templateName, Object parameters) {
-        HashMap _parameters = new HashMap<>();
+        HashMap _parameters = new HashMap();
 
         Field[] propInfos = parameters.getClass().getDeclaredFields();
         for (Field propInfo : propInfos) {
             try {
                 _parameters.put(propInfo.getName(), propInfo.get(parameters));
-            }catch (IllegalArgumentException | IllegalAccessException ex) {
+            }catch (IllegalArgumentException ex) {
+                throw new RuntimeException(ex.getMessage());
+            } catch (IllegalAccessException ex) {
                 throw new RuntimeException(ex.getMessage());
             }
         }

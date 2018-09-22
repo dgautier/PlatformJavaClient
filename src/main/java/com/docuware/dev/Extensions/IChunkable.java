@@ -13,5 +13,5 @@ import com.docuware.dev.schema._public.services.platform.UploadedFileChunk;
  */
 public interface IChunkable {
 
-    public UploadedFileChunk getFileChunk();
+    UploadedFileChunk getFileChunk();
 }

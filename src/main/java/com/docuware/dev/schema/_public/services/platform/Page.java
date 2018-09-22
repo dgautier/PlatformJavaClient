@@ -167,21 +167,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Thumbnail".
     */
     public InputStream getInputStreamFromThumbnailRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "thumbnail", InputStream.class);
+        return MethodInvocation.get(this, links, "thumbnail", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Thumbnail" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromThumbnailRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "thumbnail", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "thumbnail", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Thumbnail" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromThumbnailRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "thumbnail", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "thumbnail", InputStream.class, ct);
     }
 
     /**
@@ -197,21 +197,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Icon".
     */
     public InputStream getInputStreamFromIconRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "icon", InputStream.class);
+        return MethodInvocation.get(this, links, "icon", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Icon" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromIconRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "icon", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "icon", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Icon" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromIconRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "icon", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "icon", InputStream.class, ct);
     }
 
     /**
@@ -227,21 +227,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImage".
     */
     public InputStream getInputStreamFromDeepZoomImageRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "deepZoomImage", InputStream.class);
+        return MethodInvocation.get(this, links, "deepZoomImage", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImage" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImage", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "deepZoomImage", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImage" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImage", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "deepZoomImage", InputStream.class, ct);
     }
 
     /**
@@ -257,21 +257,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImageWithAnnotation".
     */
     public InputStream getInputStreamFromDeepZoomImageWithAnnotationRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "deepZoomImageWithAnnotation", InputStream.class);
+        return MethodInvocation.get(this, links, "deepZoomImageWithAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImageWithAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageWithAnnotationRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "DeepZoomImageWithAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromDeepZoomImageWithAnnotationRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "deepZoomImageWithAnnotation", InputStream.class, ct);
     }
 
     /**
@@ -287,21 +287,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "LowQualityImage".
     */
     public InputStream getInputStreamFromLowQualityImageRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "lowQualityImage", InputStream.class);
+        return MethodInvocation.get(this, links, "lowQualityImage", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "LowQualityImage" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromLowQualityImageRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "lowQualityImage", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "lowQualityImage", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "LowQualityImage" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromLowQualityImageRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "lowQualityImage", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "lowQualityImage", InputStream.class, ct);
     }
 
     /**
@@ -317,21 +317,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "LowQualityImageWithAnnotation".
     */
     public InputStream getInputStreamFromLowQualityImageWithAnnotationRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "lowQualityImageWithAnnotation", InputStream.class);
+        return MethodInvocation.get(this, links, "lowQualityImageWithAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "LowQualityImageWithAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromLowQualityImageWithAnnotationRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "lowQualityImageWithAnnotation", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "lowQualityImageWithAnnotation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "LowQualityImageWithAnnotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromLowQualityImageWithAnnotationRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "lowQualityImageWithAnnotation", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "lowQualityImageWithAnnotation", InputStream.class, ct);
     }
 
     /**
@@ -347,21 +347,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Textshot".
     */
     public PageContent getPageContentFromTextshotRelation() {
-        return MethodInvocation.<PageContent>get(this, links, "textshot", PageContent.class);
+        return MethodInvocation.get(this, links, "textshot", PageContent.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Textshot" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<PageContent>> getPageContentFromTextshotRelationAsync() {
-        return MethodInvocation.<PageContent>getAsync(this, links, "textshot", PageContent.class);
+        return MethodInvocation.getAsync(this, links, "textshot", PageContent.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Textshot" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<PageContent>> getPageContentFromTextshotRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<PageContent>getAsync(this, links, "textshot", PageContent.class, ct);
+        return MethodInvocation.getAsync(this, links, "textshot", PageContent.class, ct);
     }
 
     /**
@@ -377,21 +377,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "FileDownload".
     */
     public InputStream getInputStreamFromFileDownloadRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "fileDownload", InputStream.class);
+        return MethodInvocation.get(this, links, "fileDownload", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "FileDownload" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromFileDownloadRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "fileDownload", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "fileDownload", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "FileDownload" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromFileDownloadRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "fileDownload", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "fileDownload", InputStream.class, ct);
     }
 
     /**
@@ -428,21 +428,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Annotation".
     */
     public Annotation getAnnotationFromAnnotationRelation() {
-        return MethodInvocation.<Annotation>get(this, links, "annotation", Annotation.class);
+        return MethodInvocation.get(this, links, "annotation", Annotation.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Annotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Annotation>> getAnnotationFromAnnotationRelationAsync() {
-        return MethodInvocation.<Annotation>getAsync(this, links, "annotation", Annotation.class);
+        return MethodInvocation.getAsync(this, links, "annotation", Annotation.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Annotation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Annotation>> getAnnotationFromAnnotationRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Annotation>getAsync(this, links, "annotation", Annotation.class, ct);
+        return MethodInvocation.getAsync(this, links, "annotation", Annotation.class, ct);
     }
 
     /**
@@ -500,21 +500,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsSvg".
     */
     public InputStream getInputStreamFromAnnotationAsSvgRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "annotationAsSvg", InputStream.class);
+        return MethodInvocation.get(this, links, "annotationAsSvg", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsSvg" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromAnnotationAsSvgRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "annotationAsSvg", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "annotationAsSvg", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsSvg" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromAnnotationAsSvgRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "annotationAsSvg", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "annotationAsSvg", InputStream.class, ct);
     }
 
     /**
@@ -530,21 +530,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsXaml".
     */
     public XElementWrapper getXElementWrapperFromAnnotationAsXamlRelation() {
-        return MethodInvocation.<XElementWrapper>get(this, links, "annotationAsXaml", XElementWrapper.class);
+        return MethodInvocation.get(this, links, "annotationAsXaml", XElementWrapper.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsXaml" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<XElementWrapper>> getXElementWrapperFromAnnotationAsXamlRelationAsync() {
-        return MethodInvocation.<XElementWrapper>getAsync(this, links, "annotationAsXaml", XElementWrapper.class);
+        return MethodInvocation.getAsync(this, links, "annotationAsXaml", XElementWrapper.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "AnnotationAsXaml" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<XElementWrapper>> getXElementWrapperFromAnnotationAsXamlRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<XElementWrapper>getAsync(this, links, "annotationAsXaml", XElementWrapper.class, ct);
+        return MethodInvocation.getAsync(this, links, "annotationAsXaml", XElementWrapper.class, ct);
     }
 
     /**
@@ -620,21 +620,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public Page getPageFromSelfRelation() {
-        return MethodInvocation.<Page>get(this, links, "self", Page.class);
+        return MethodInvocation.get(this, links, "self", Page.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Page>> getPageFromSelfRelationAsync() {
-        return MethodInvocation.<Page>getAsync(this, links, "self", Page.class);
+        return MethodInvocation.getAsync(this, links, "self", Page.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Page>> getPageFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Page>getAsync(this, links, "self", Page.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", Page.class, ct);
     }
 
 

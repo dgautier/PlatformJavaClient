@@ -162,21 +162,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public Group getGroupFromSelfRelation() {
-        return MethodInvocation.<Group>get(this, links, "self", Group.class);
+        return MethodInvocation.get(this, links, "self", Group.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Group>> getGroupFromSelfRelationAsync() {
-        return MethodInvocation.<Group>getAsync(this, links, "self", Group.class);
+        return MethodInvocation.getAsync(this, links, "self", Group.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Group>> getGroupFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Group>getAsync(this, links, "self", Group.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", Group.class, ct);
     }
 
     /**
@@ -192,21 +192,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Users".
     */
     public Users getUsersFromUsersRelation() {
-        return MethodInvocation.<Users>get(this, links, "users", Users.class);
+        return MethodInvocation.get(this, links, "users", Users.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Users" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Users>> getUsersFromUsersRelationAsync() {
-        return MethodInvocation.<Users>getAsync(this, links, "users", Users.class);
+        return MethodInvocation.getAsync(this, links, "users", Users.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Users" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Users>> getUsersFromUsersRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Users>getAsync(this, links, "users", Users.class, ct);
+        return MethodInvocation.getAsync(this, links, "users", Users.class, ct);
     }
 
 

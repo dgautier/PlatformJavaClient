@@ -132,21 +132,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Content".
     */
     public InputStream getInputStreamFromContentRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "content", InputStream.class);
+        return MethodInvocation.get(this, links, "content", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromContentRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "content", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "content", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Content" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromContentRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "content", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "content", InputStream.class, ct);
     }
 
 

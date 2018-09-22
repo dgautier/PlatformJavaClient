@@ -178,21 +178,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public Role getRoleFromSelfRelation() {
-        return MethodInvocation.<Role>get(this, links, "self", Role.class);
+        return MethodInvocation.get(this, links, "self", Role.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Role>> getRoleFromSelfRelationAsync() {
-        return MethodInvocation.<Role>getAsync(this, links, "self", Role.class);
+        return MethodInvocation.getAsync(this, links, "self", Role.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Role>> getRoleFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Role>getAsync(this, links, "self", Role.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", Role.class, ct);
     }
 
 

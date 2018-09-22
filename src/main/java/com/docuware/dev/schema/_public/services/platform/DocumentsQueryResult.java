@@ -213,21 +213,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Next".
     */
     public DocumentsQueryResult getDocumentsQueryResultFromNextRelation() {
-        return MethodInvocation.<DocumentsQueryResult>get(this, links, "next", DocumentsQueryResult.class);
+        return MethodInvocation.get(this, links, "next", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Next" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromNextRelationAsync() {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "next", DocumentsQueryResult.class);
+        return MethodInvocation.getAsync(this, links, "next", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Next" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromNextRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "next", DocumentsQueryResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "next", DocumentsQueryResult.class, ct);
     }
 
     /**
@@ -243,21 +243,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Prev".
     */
     public DocumentsQueryResult getDocumentsQueryResultFromPrevRelation() {
-        return MethodInvocation.<DocumentsQueryResult>get(this, links, "prev", DocumentsQueryResult.class);
+        return MethodInvocation.get(this, links, "prev", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Prev" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromPrevRelationAsync() {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "prev", DocumentsQueryResult.class);
+        return MethodInvocation.getAsync(this, links, "prev", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Prev" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromPrevRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "prev", DocumentsQueryResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "prev", DocumentsQueryResult.class, ct);
     }
 
     /**
@@ -273,21 +273,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public DocumentsQueryResult getDocumentsQueryResultFromSelfRelation() {
-        return MethodInvocation.<DocumentsQueryResult>get(this, links, "self", DocumentsQueryResult.class);
+        return MethodInvocation.get(this, links, "self", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromSelfRelationAsync() {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "self", DocumentsQueryResult.class);
+        return MethodInvocation.getAsync(this, links, "self", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "self", DocumentsQueryResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", DocumentsQueryResult.class, ct);
     }
 
     /**
@@ -303,21 +303,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "First".
     */
     public DocumentsQueryResult getDocumentsQueryResultFromFirstRelation() {
-        return MethodInvocation.<DocumentsQueryResult>get(this, links, "first", DocumentsQueryResult.class);
+        return MethodInvocation.get(this, links, "first", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "First" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromFirstRelationAsync() {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "first", DocumentsQueryResult.class);
+        return MethodInvocation.getAsync(this, links, "first", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "First" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromFirstRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "first", DocumentsQueryResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "first", DocumentsQueryResult.class, ct);
     }
 
     /**
@@ -333,21 +333,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Feed".
     */
     public XElementWrapper getXElementWrapperFromFeedRelation() {
-        return MethodInvocation.<XElementWrapper>get(this, links, "feed", XElementWrapper.class);
+        return MethodInvocation.get(this, links, "feed", XElementWrapper.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Feed" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<XElementWrapper>> getXElementWrapperFromFeedRelationAsync() {
-        return MethodInvocation.<XElementWrapper>getAsync(this, links, "feed", XElementWrapper.class);
+        return MethodInvocation.getAsync(this, links, "feed", XElementWrapper.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Feed" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<XElementWrapper>> getXElementWrapperFromFeedRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<XElementWrapper>getAsync(this, links, "feed", XElementWrapper.class, ct);
+        return MethodInvocation.getAsync(this, links, "feed", XElementWrapper.class, ct);
     }
 
     /**
@@ -363,21 +363,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Download".
     */
     public DocumentsQueryResult getDocumentsQueryResultFromDownloadRelation() {
-        return MethodInvocation.<DocumentsQueryResult>get(this, links, "download", DocumentsQueryResult.class);
+        return MethodInvocation.get(this, links, "download", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Download" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromDownloadRelationAsync() {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "download", DocumentsQueryResult.class);
+        return MethodInvocation.getAsync(this, links, "download", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Download" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromDownloadRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "download", DocumentsQueryResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "download", DocumentsQueryResult.class, ct);
     }
 
     /**

@@ -176,21 +176,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Result".
     */
     public DocumentsQueryResult getDocumentsQueryResultFromResultRelation() {
-        return MethodInvocation.<DocumentsQueryResult>get(this, links, "result", DocumentsQueryResult.class);
+        return MethodInvocation.get(this, links, "result", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Result" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromResultRelationAsync() {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "result", DocumentsQueryResult.class);
+        return MethodInvocation.getAsync(this, links, "result", DocumentsQueryResult.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Result" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<DocumentsQueryResult>> getDocumentsQueryResultFromResultRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<DocumentsQueryResult>getAsync(this, links, "result", DocumentsQueryResult.class, ct);
+        return MethodInvocation.getAsync(this, links, "result", DocumentsQueryResult.class, ct);
     }
 
     /**
@@ -227,21 +227,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "ResultDialog".
     */
     public Dialog getDialogFromResultDialogRelation() {
-        return MethodInvocation.<Dialog>get(this, links, "resultDialog", Dialog.class);
+        return MethodInvocation.get(this, links, "resultDialog", Dialog.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "ResultDialog" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Dialog>> getDialogFromResultDialogRelationAsync() {
-        return MethodInvocation.<Dialog>getAsync(this, links, "resultDialog", Dialog.class);
+        return MethodInvocation.getAsync(this, links, "resultDialog", Dialog.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "ResultDialog" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Dialog>> getDialogFromResultDialogRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Dialog>getAsync(this, links, "resultDialog", Dialog.class, ct);
+        return MethodInvocation.getAsync(this, links, "resultDialog", Dialog.class, ct);
     }
 
 

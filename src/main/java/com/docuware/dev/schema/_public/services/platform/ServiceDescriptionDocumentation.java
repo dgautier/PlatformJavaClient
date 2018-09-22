@@ -130,21 +130,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "LinkModelOverview".
     */
     public InputStream getInputStreamFromLinkModelOverviewRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "linkModelOverview", InputStream.class);
+        return MethodInvocation.get(this, links, "linkModelOverview", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "LinkModelOverview" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromLinkModelOverviewRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "linkModelOverview", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "linkModelOverview", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "LinkModelOverview" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromLinkModelOverviewRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "linkModelOverview", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "linkModelOverview", InputStream.class, ct);
     }
 
     /**
@@ -160,21 +160,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Schemas".
     */
     public XmlSchemas getXmlSchemasFromSchemasRelation() {
-        return MethodInvocation.<XmlSchemas>get(this, links, "schemas", XmlSchemas.class);
+        return MethodInvocation.get(this, links, "schemas", XmlSchemas.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Schemas" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<XmlSchemas>> getXmlSchemasFromSchemasRelationAsync() {
-        return MethodInvocation.<XmlSchemas>getAsync(this, links, "schemas", XmlSchemas.class);
+        return MethodInvocation.getAsync(this, links, "schemas", XmlSchemas.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Schemas" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<XmlSchemas>> getXmlSchemasFromSchemasRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<XmlSchemas>getAsync(this, links, "schemas", XmlSchemas.class, ct);
+        return MethodInvocation.getAsync(this, links, "schemas", XmlSchemas.class, ct);
     }
 
     /**
@@ -190,21 +190,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "SchemaSearch".
     */
     public InputStream getInputStreamFromSchemaSearchRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "schemaSearch", InputStream.class);
+        return MethodInvocation.get(this, links, "schemaSearch", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SchemaSearch" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromSchemaSearchRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "schemaSearch", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "schemaSearch", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "SchemaSearch" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromSchemaSearchRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "schemaSearch", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "schemaSearch", InputStream.class, ct);
     }
 
     /**
@@ -220,21 +220,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "UriTemplatesDocumentation".
     */
     public InputStream getInputStreamFromUriTemplatesDocumentationRelation() {
-        return MethodInvocation.<InputStream>get(this, links, "uriTemplatesDocumentation", InputStream.class);
+        return MethodInvocation.get(this, links, "uriTemplatesDocumentation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "UriTemplatesDocumentation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromUriTemplatesDocumentationRelationAsync() {
-        return MethodInvocation.<InputStream>getAsync(this, links, "uriTemplatesDocumentation", InputStream.class);
+        return MethodInvocation.getAsync(this, links, "uriTemplatesDocumentation", InputStream.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "UriTemplatesDocumentation" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<InputStream>> getInputStreamFromUriTemplatesDocumentationRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<InputStream>getAsync(this, links, "uriTemplatesDocumentation", InputStream.class, ct);
+        return MethodInvocation.getAsync(this, links, "uriTemplatesDocumentation", InputStream.class, ct);
     }
 
 

@@ -60,8 +60,10 @@ public class EasyCheckoutCheckinExtensionsBase {
                 DeserializedHttpResponseGen<InputStream> t;
                 try {
                     t = serviceConnection.postToCheckoutForStreamAsync(docId, fileCabinetId, new CheckOutToFileSystemInfo()).get();
-                } catch (InterruptedException | ExecutionException x) {
+                } catch (InterruptedException x) {
                     throw new RuntimeException(x.getMessage());
+                } catch (ExecutionException e) {
+                    throw new RuntimeException(e.getMessage());
                 }
 
                 EasyCheckoutResult ecr = new EasyCheckoutResult();
@@ -168,7 +170,8 @@ public class EasyCheckoutCheckinExtensionsBase {
             byte[] buffer = new byte[1024];
             try {
                 File temp = File.createTempFile("tempfile", null);
-                try (FileOutputStream fos = new FileOutputStream(temp)) {
+                FileOutputStream fos = new FileOutputStream(temp);
+                try {
                     int read;
                     while ((read = is.read(buffer)) != -1) {
                         fos.write(buffer, 0, read);
@@ -183,8 +186,10 @@ public class EasyCheckoutCheckinExtensionsBase {
                     f.setContentDisposition(fdcd);
                     multipartForm.bodyPart(f);
                     is.close();
+                } finally {
+                    fos.close();
                 }
-            } catch (IOException | RuntimeException e) {
+            } catch (IOException e) {
                 throw new RuntimeException(e.getMessage() + e.getCause());
             }
         }

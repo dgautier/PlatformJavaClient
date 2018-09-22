@@ -109,21 +109,21 @@ private HttpClientProxy proxy;//test
     * Calls the HTTP Get Method on the link for the relation "Self".
     */
     public Notifications getNotificationsFromSelfRelation() {
-        return MethodInvocation.<Notifications>get(this, links, "self", Notifications.class);
+        return MethodInvocation.get(this, links, "self", Notifications.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Notifications>> getNotificationsFromSelfRelationAsync() {
-        return MethodInvocation.<Notifications>getAsync(this, links, "self", Notifications.class);
+        return MethodInvocation.getAsync(this, links, "self", Notifications.class);
     }
 
     /**
     * Calls the HTTP Get Method on the link for the relation "Self" asynchronously.
     */
     public CompletableFuture<DeserializedHttpResponseGen<Notifications>> getNotificationsFromSelfRelationAsync(CancellationToken ct) {
-        return MethodInvocation.<Notifications>getAsync(this, links, "self", Notifications.class, ct);
+        return MethodInvocation.getAsync(this, links, "self", Notifications.class, ct);
     }
 
 

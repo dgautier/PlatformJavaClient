@@ -106,14 +106,14 @@ class LinkResolver {
                 ClientResponse resp = web.get(ClientResponse.class);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
-                    if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
+                    if (resp.getStatus() == 204) return new DeserializedHttpResponseGen<T>(resp);
                     T t = resp.getEntity(expectedType);
                     if (t instanceof IHttpClientProxy) {
                         ((IHttpClientProxy) t).setProxy(proxy.getProxy());
                     }
-                    return new DeserializedHttpResponseGen(resp, t);
+                    return new DeserializedHttpResponseGen<T>(resp, t);
                 }
             }
         });
@@ -215,7 +215,7 @@ class LinkResolver {
                 ClientResponse resp = web.type(type).accept(accept).post(ClientResponse.class, postData);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -385,7 +385,7 @@ class LinkResolver {
                 ClientResponse resp = web.type(bodyContentType).accept(accept).post(ClientResponse.class, postData);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -437,7 +437,7 @@ class LinkResolver {
                 ClientResponse resp = web.type(MediaType.MULTIPART_FORM_DATA).post(ClientResponse.class, postData);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -515,7 +515,7 @@ class LinkResolver {
                 ClientResponse resp = web.post(ClientResponse.class, postData);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -599,7 +599,7 @@ class LinkResolver {
                 ClientResponse resp = web.type(type).accept(accept).put(ClientResponse.class, postData);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -677,7 +677,7 @@ class LinkResolver {
                 ClientResponse resp = web.accept(accept).put(ClientResponse.class);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -722,6 +722,10 @@ class LinkResolver {
      */
     <P> String put(IHttpClientProxy proxy, Links links, String rel, P postData, String type, String accept) {
         ClientResponse resp = proxy.getProxy().getHttpClient().getClient().resource(LinkResolver.getLink(baseUri, links, rel)).type(type).accept(accept).put(ClientResponse.class, postData);
+        return getStringResponse(resp);
+    }
+
+    private String getStringResponse(ClientResponse resp) {
         if (resp.getStatus() < 200 || resp.getStatus() > 399) {
             HttpClientRequestException e = HttpClientRequestException.create(resp);
             throw e;
@@ -829,7 +833,7 @@ class LinkResolver {
                 ClientResponse resp = web.type(bodyContentType).accept(accept).put(ClientResponse.class, postData);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -906,7 +910,7 @@ class LinkResolver {
                 ClientResponse resp = web.put(ClientResponse.class, postData);
                 if (resp.getStatus() < 200 || resp.getStatus() > 399) {
                     HttpClientRequestException e = HttpClientRequestException.create(resp);
-                    return new DeserializedHttpResponseGen<>(resp, e);
+                    return new DeserializedHttpResponseGen<T>(resp, e);
                 } else {
                     if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
                     T t = resp.getEntity(expectedType);
@@ -1036,7 +1040,7 @@ class LinkResolver {
                     if (t instanceof IHttpClientProxy) {
                         ((IHttpClientProxy) t).setProxy(proxy.getProxy());
                     }
-                    return new DeserializedHttpResponseGen<>(resp, t);
+                    return new DeserializedHttpResponseGen<T>(resp, t);
                 }
             }
         });
@@ -1090,7 +1094,7 @@ class LinkResolver {
                     if (t instanceof IHttpClientProxy) {
                         ((IHttpClientProxy) t).setProxy(proxy.getProxy());
                     }
-                    return new DeserializedHttpResponseGen<>(resp, t);
+                    return new DeserializedHttpResponseGen<T>(resp, t);
                 }
             }
         });
@@ -1141,7 +1145,7 @@ class LinkResolver {
                     if (t instanceof IHttpClientProxy) {
                         ((IHttpClientProxy) t).setProxy(proxy.getProxy());
                     }
-                    return new DeserializedHttpResponseGen<>(resp, t);
+                    return new DeserializedHttpResponseGen<T>(resp, t);
                 }
             }
         });
@@ -1198,7 +1202,7 @@ class LinkResolver {
                     if (t instanceof IHttpClientProxy) {
                         ((IHttpClientProxy) t).setProxy(proxy.getProxy());
                     }
-                    return new DeserializedHttpResponseGen<>(resp, t);
+                    return new DeserializedHttpResponseGen<T>(resp, t);
                 }
             }
         });
@@ -1249,7 +1253,7 @@ class LinkResolver {
                     if (t instanceof IHttpClientProxy) {
                         ((IHttpClientProxy) t).setProxy(proxy.getProxy());
                     }
-                    return new DeserializedHttpResponseGen<>(resp, t);
+                    return new DeserializedHttpResponseGen<T>(resp, t);
                 }
             }
         });
@@ -1294,7 +1298,7 @@ return CompletableFuture.<DeserializedHttpResponseGen<String>>supplyAsync(new Su
             return new DeserializedHttpResponseGen(resp, e);
         } else {
             if (resp.getStatus() == 204) return new DeserializedHttpResponseGen(resp);
-            return new DeserializedHttpResponseGen<>(resp, resp.getEntity(String.class));
+            return new DeserializedHttpResponseGen<String>(resp, resp.getEntity(String.class));
         }
     }
 });
